@@ -1,0 +1,61 @@
+body {
+    font-size: 25px;
+    line-height: 32px;
+    font-family: 'Mansalva', cursive;
+    font-family: 'Noticia Text', serif;
+    color:#000;
+}
+
+h1,h3 {
+    font-size:2.4rem;
+    color: whitesmoke;
+    text-align: center;
+
+}
+h2 {
+    font-size:2.4rem;
+    color: black;
+    text-align: center;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    align-content: center;
+
+}
+
+header {
+    text-align: center;
+    background-color:lightcoral;
+    color: whitesmoke;
+}
+
+main img {
+    height: 400px;
+    
+}
+
+ul {
+    text-align: left;
+}
+
+ p2 {
+    display: flex;
+    flex-wrap:wrap;
+}
+p2 {
+    color: whitesmoke;
+}
+
+#first {
+    padding: 1rem;
+    background-color: lightcoral;
+}
+footer {
+    font-size: smaller;
+    background-color: lightcoral;
+    color:whitesmoke;
+    align-content: center;
+}
