@@ -1,5 +1,5 @@
 body {
-    font-size: 25px;
+    font-size: 12px;
     line-height: 32px;
     font-family: 'Mansalva', cursive;
     font-family: 'Noticia Text', serif;
@@ -31,7 +31,7 @@ header {
     color: whitesmoke;
 }
 
-main img {
+img {
     height: 400px;
     
 }
@@ -56,5 +56,6 @@ footer {
     font-size: smaller;
     background-color: lightcoral;
     color:whitesmoke;
-    align-content: center;
+    /* align-content: center; */
+    text-align: center;
 }
