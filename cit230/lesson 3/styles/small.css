@@ -1,0 +1,24 @@
+/* html selectors */
+
+li {
+    float: left;
+   /* margin-left: 10px;
+    margin-right: 10px; */
+    /* margin: 10px; */
+    margin: 10px 5px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+/* class selectors */
+
+.highlight {
+    font-weight: bold;
+}
+/* id selectors */
+#active {
+    background-color: yellow;
+}
