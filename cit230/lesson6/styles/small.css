@@ -60,7 +60,6 @@ main img {
 article {
     border:1px #f08a4b;
     text-align: center;
-
 }
 
 article {
@@ -100,6 +99,7 @@ ul {
 .highlight {
     font-weight: bold;
 }
+/*------------- Navigation menu + hamburger menu------------------*/
 nav {
 	margin: 0 auto;
 	background-color: #000;
@@ -127,7 +127,12 @@ nav {
 	background-color: #fff;
 	font-weight: 700;
 }
-
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+  .responsive li {
+	display: block;
+}
 
 footer {
     background-color: #f3ca40;
@@ -152,10 +157,7 @@ table, th, td {
 }
 
 /* -----------------------HERO IMAGE ------------------------ */
-main {
-    max-width: 800px;;
-    margin:0 auto;
-}
+
 h1 {
     text-align: center;
     font-size:2.5rem;
@@ -168,10 +170,18 @@ h1, h2, p {margin: 0;}
 .stats {
 	position: absolute;
 	top: 25px;
-	right: 50px;
+	right: 470px;
 	background: radial-gradient(#eee, #4567aa);
 	border: 1px solid #000;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #111;
-	opacity: .8;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+}
+
+#weatherSummary {
+    background-color: pink;
+    max-width: 180px;
+    padding: 10px;
 }
