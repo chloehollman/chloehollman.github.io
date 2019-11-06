@@ -1,0 +1,34 @@
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+table, th, tr ,td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    background-color: #628ca6;
+    color:white;
+}
+
+th[colspan="3"] {
+    background-color: #7fb9c2;
+    color:black;
+}
+
+/* colspan on 2nd td for black friday
+*/
+
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
