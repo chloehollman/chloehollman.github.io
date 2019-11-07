@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script type="text/javascript" src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header>Sunny Side Up Weather
+        <img class="logo" src="images/sunny.png">
+        <!-- <section id="weatherSummary"> -->
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <!-- <li><a href="/index.html"></a>Home</li> -->
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="cit230/lesson7/gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action ="thanks.html" method="GET">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="user@email.com">
+            </div>
+            <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" id="zipCode" name="zipCode" required>
+            </div>
+            
+            <div>
+                    <label for="stormDate">Storm Date</label>
+                    <input type="date" id="stormDate" name="stormDate">
+            </div>
+            <label for="stormType">Storm Type:</label>
+            <input list="stormTypes">
+
+            <datalist id="stormTypes">
+            <option value="Flash Flood">
+            <option value="Hurricane">
+            <option value="Hail">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+            </datalist>
+        <div>
+                <label for="stormSeverity">Storm Severity</label>
+                <input type="range" id="stormSeverity" name="stormDate" min="1" max="10">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+        </form>
+       
+    </main>
+    <footer>
+        <p>&#9813; Chloe Hollman &#9813; <a href="http://www.byui.edu/online">BYUI Online Learning</a> &#9813;</p>
+        <p>&copy; <span id="currentDate"></span></p>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hJppgFnvFVvcm6ydb8Se0zmXpJA" width="200" height="200"
+                style="border:0;"></iframe>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src= "scripts/webfontload.js"></script>
+</body>
+
+</html>

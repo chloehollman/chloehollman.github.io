@@ -200,3 +200,7 @@ h1, h2, p {margin: 0;}
     -webkit-transition: 0.4s;
     filter: blur;
 }
+
+form {
+    max-width: 300px;
+}
