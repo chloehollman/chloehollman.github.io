@@ -53,8 +53,8 @@ header {
     width: 50px;
 }
 
-main img {
-    width: 500px;
+img {
+    /* width: 500px; */
 }
 
 article {
@@ -192,10 +192,17 @@ h1, h2, p {margin: 0;}
 }
 #gallery img {
     transition: filter 0.5s;
+    width: 90%;
 }
 
 #gallery img:hover{
     box-shadow:0 0 20px black;
     -webkit-transition: 0.4s;
     filter: blur;
+}
+
+#gallery figcaption {
+    color:black;
+    font-family: 'PT Serif', serif;
+    text-align: center;
 }
