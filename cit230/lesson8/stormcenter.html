@@ -34,17 +34,18 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <!-- <li><a href="/index.html"></a>Home</li> -->
             <li><a href="#">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
+            <li><a href="./preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="cit230/lesson7/gallery-8.html">Gallery</a></li>
+            <li><a href="./gallery-8.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
+    <main id= "stormCenter">
+        <h2>Report your Local Weather!</h2>
         <form action ="thanks.html" method="GET">
             <div>
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ]{5,}"required>
             </div>
             <div>
                     <label for="email">Email:</label>
@@ -63,6 +64,7 @@
                     <label for="stormDate">Storm Date</label>
                     <input type="date" id="stormDate" name="stormDate">
             </div>
+            <div>
             <label for="stormType">Storm Type:</label>
             <input list="stormTypes">
 
@@ -73,12 +75,59 @@
             <option value="Thunderstorm">
             <option value="Tornado">
             </datalist>
+        </div>
         <div>
-                <label for="stormSeverity">Storm Severity</label>
-                <input type="range" id="stormSeverity" name="stormDate" min="1" max="10">
+                <!-- <label for="stormSeverity">Storm Severity</label>
+                <input type="range" id="stormSeverity" name="stormDate" min="1" max="10"> -->
+                <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <span id="ratingvalue">5</span>
+                        </label>
+                
+                            <datalist id="tickmarks">
+                  <option value="0">
+                  <option value="1">
+                  <option value="2">
+                  <option value="3">
+                  <option value="4">
+                  <option value="5">
+                  <option value="6">
+                  <option value="7">
+                  <option value="8">
+                  <option value="9">
+                  <option value="10">
+        </div>
+        <div>
+            <label for="stormRegion">Storm Region:</label>
+            <select name="stormRegion" id="stormRegion">
+                <option value= "" selected disabled>Select Region</option>
+                <option value= "Fish Haven">Fish Haven</option>
+                <option value= "Preston">Preston</option>
+                <option value= "Sugar City">Sugar City</option>
+            </select>
+        </div>
+        <div class="flex">
+            <span>Are you in Danger?</span>
+            <div class="no-margin">
+            <input id="yes" name="danger" type="radio" value="Yes">
+            <label for="yes">Yes</label>
+            </div>
+            <div>
+            <input id="no" name="danger" type="radio" value="No">
+            <label for="no">No</label>
+            </div>
+            <div>
+            <input id="maybe" name="danger" type="radio" value="Maybe">
+            <label for="maybe">Maybe</label>
+            </div>
+        </div>
+        <div>
+            <label for="comments" class="align-top">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </div>
         <div>
             <input type="submit">
+            <input type="reset">
         </div>
 
         </form>
@@ -88,8 +137,8 @@
         <p>&#9813; Chloe Hollman &#9813; <a href="http://www.byui.edu/online">BYUI Online Learning</a> &#9813;</p>
         <p>&copy; <span id="currentDate"></span></p>
         <div id="map">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1hJppgFnvFVvcm6ydb8Se0zmXpJA" width="200" height="200"
-                style="border:0;"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1hJppgFnvFVvcm6ydb8Se0zmXpJA" width="200" height="200" -->
+                <!-- style="border:0;"></iframe> -->
         </div>
     </footer>
     <script src="scripts/main.js"></script>

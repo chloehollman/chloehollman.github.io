@@ -4,7 +4,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     background-color: whitesmoke;
-    margin: 0.5em;
+    /* margin: 0.5em; */
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -73,8 +73,8 @@ article {
 li {
     float: left;
     text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
      margin: 10px 5px; 
     list-style: none;
      padding-left: 0; 
@@ -134,6 +134,7 @@ nav {
 	display: block;
 }
 
+
 footer {
     background-color: #f3ca40;
     text-align: center;
@@ -141,6 +142,7 @@ footer {
     /* margin: 200px; */
     padding: 0.75rem;
     margin: 0 auto;
+    margin-top: 1em;
 
 }
 
@@ -156,12 +158,67 @@ table, th, td {
     display: none;
 }
 
+/* ----------------------- FORM ------------------------ */
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    min-width: 150px;
+}
+
+#stormCenter {
+    color: white;
+    background-color: #97c4bd;
+    width: 60%;
+    padding: 30px;
+    margin-bottom: 1em;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#ratingvalue {
+    margin: 0 15px;
+}
+
+#rating {
+    margin-left: 23px;
+}
+
+main h2{
+    text-align:center;
+    padding: 20px;
+    background-color:snow;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------HERO IMAGE ------------------------ */
 
 h1 {
     text-align: center;
     font-size:2.5rem;
     text-shadow:3px 3px 5px #777;
+}
+
+.active {
+    background-color:black;
 }
 
 .herodiv {margin: 10px auto;position: relative;}
@@ -179,6 +236,16 @@ h1, h2, p {margin: 0;}
     display: flex;
     flex-direction: column;
 }
+.no-margin {
+    margin: 3px;
+}
+
+
+
+.align-top{
+    vertical-align: top;
+}
+
 
 #weatherSummary {
     background-color: pink;
@@ -201,6 +268,4 @@ h1, h2, p {margin: 0;}
     filter: blur;
 }
 
-form {
-    max-width: 300px;
-}
+
