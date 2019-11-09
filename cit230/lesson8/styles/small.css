@@ -195,8 +195,10 @@ label {
 main h2{
     text-align:center;
     padding: 20px;
-    background-color:snow;
     color:black;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 
