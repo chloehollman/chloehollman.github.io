@@ -12,6 +12,10 @@
 	.navigation li a {
 		color: white;
 	}
+
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
 	/* id selectors */
 	#map {
 		display: block;

@@ -1,7 +1,7 @@
 
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     padding: 20px;
     background-color: whitesmoke;
     /* margin: 0.5em; */
@@ -134,6 +134,22 @@ nav {
 	display: block;
 }
 
+.grid {
+    display: grid;
+    grid-column: 1fr;
+    padding: 20px;
+}
+
+.grid img {
+    width: 300px;
+    padding: 25px;
+}
+
+.grid article {
+    width: 350px;
+    border: 5px dashed white;
+}
+
 
 footer {
     background-color: #f3ca40;
@@ -216,7 +232,6 @@ main h2{
 h1 {
     text-align: center;
     font-size:2.5rem;
-    text-shadow:3px 3px 5px #777;
 }
 
 .active {
