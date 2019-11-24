@@ -1,12 +1,13 @@
 
 section {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2px;
     background-color: whitesmoke;
-    /* margin: 0.5em; */
+     margin: 0.5em;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
+
 }
 
 a {
@@ -94,7 +95,8 @@ ul {
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
-     padding: 20px; 
+     padding: 50px; 
+     margin: auto;
 }
 .highlight {
     font-weight: bold;
@@ -158,7 +160,7 @@ footer {
     /* margin: 200px; */
     padding: 0.75rem;
     margin: 0 auto;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 
 }
 

@@ -81,46 +81,7 @@ function adjustRating(rating) {
 }
 
 
-const apiForecastURL= 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=53a5c2262e61461f5b32ca79e2002ed1&units=imperial';
 
-//comment out the API when designing
 
-fetch(apiForecastURL)
-    .then(
-        (response) => response.json()
-    )
-    .then(
-        (forecast) => {
-            console.log(forecast);
 
-            let tomorrowDate = new Date();
-            tomorrowDate.setDate(tomorrowDate.getDate() + 1 );
 
-            forecast.list.forEach(
-                (forecast) => {
-                    let currentDate =
-                    //get full year
-                    currentDate.getFullYear()+ '-' +
-
-                    //get month
-                    (currentDate.getMonth()+1) + '-' +
-
-                    //get day
-                    currentDate.getDate();
-
-                let hourString = '18:00:00';
-
-                    //debug
-                    console.log(dateString);
-
-                    //loop through results
-                    forecasts.list.forEach(
-                        (forecast) => {
-                            if(forecast.dt_text.includes(dayeString)&&
-                            forecast.dt_text.indlues(hourstring));
-                        }
-                    )
-                }
-            );
-        }
-    )

@@ -18,7 +18,15 @@
     <header>Sunny Side Up Weather
         <img class="logo" src="images/sunny.png">
         <!-- <section id="weatherSummary"> -->
+            <div>
 
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
         </section>
     </header>
     <nav>
@@ -33,66 +41,63 @@
         </ul>
     </nav>
     <main>
-        <section class="grid">
-       <article>
-           <h1>Fish Haven</h1>
-           <h3 id="fishHavenMotto"></h3>
-           <p>
-               Year Founded:
-               <span id="fishHavenYearFounded"></span>
-           </p>
-           <p>
-               Population:
-               <span id="fishHavenPop"></span>
-           </p>
-           <p>
-                Average rainfall:
-                <span id="fishHavenRain"></span>
-            </p>
-           <p>
-               <img src="images/fishhaven.jpg" alt="Fish Haven" id="fishHavenImage">
-           </p>
-       </article>
-       <article>
-           <h1>Preston</h1>
-           <h3 id="prestonMotto"></h3>
-           <p>
-                Year Founded:
-                <span id="prestonYearFounded"></span>
-           </p>
-           <p>
-                Population:
-                <span id="prestonPop"></span>
-            </p>
-            <p>
-                 Average rainfall:
-                 <span id="prestonRain"></span>
-            </p>
-            <p>
-                <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/02/ccimage-shutterstock_80692150.jpg" alt="Fish Haven" id="fishHavenImage">
-            </p>
+        <article>
+            <h2>Preston, Idaho</h2>
+            <section id="forecast">
+                <h3>Hero w/ weather summary</h3>
+                <div class="herodiv">
+                    <picture>
+                        <source srcset="images/franklinmedium.jpg" media="(min-width:500px)
+                        and (max-width: 799px)">
+                            <source srcset="images/franklinlarge.jpg" media="(min-width:800px)">
+                        <img src="images/franklinsmall.jpg" alt="trees">
+                    </picture>
+                    <!-- <img src="images/clouds.jpeg" alt="Preston Clouds" class="hero-image"> -->
+                    <section class="stats">
+                        <h2>Weather</h2>
+                        <p>
+                            <span>Current Temp:</span>
+                            <span id="currentTemp"></span>
+                        </p>
+                        <p>
+                            <span>Wind Speed:</span>
+                            <span id="windSpeed"></span>
+                        </p>
+                        <p>
+                            <span>Wind Chill:</span>
+                            <span id="windChill"></span>
+                        </p>
+
+                    </section>
+                </div>
+
+                <!-- panckaes! -->
+                <section id="pancake" class="hidden">
+                    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+                </section>
+
+                <section>
+                    <p>5 Day Forecast</p>
+
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th id="day1">Day 1</th>
+                            <th id="day2">Day 2</th>
+                            <th id="day3">Day 3</th>
+                            <th id="day4">Day 4</th>
+                            <th id="day5">Day 5</th>
+                        </tr>
+                        <tr>
+                            <td>Forecast</td>
+                            <td id="temp1">60&deg;</td>
+                            <td id="temp2">68&deg;</td>
+                            <td id="temp3">56&deg;</td>
+                            <td id="temp4">52&deg;</td>
+                            <td id="temp5">44&deg;</td>
+                        </tr>
+                    </table>
            
-       </article>
-       <article>
-           <h1> Soda Springs</h1>
-           <h3 id="sodaSpringsMotto"></h3>
-           <p>
-                Year Founded:
-                <span id="sodaSpringsYearFounded"></span>
-           </p>
-           <p>
-                Population:
-                <span id="sodaSpringsPop"></span>
-            </p>
-            <p>
-                 Average rainfall:
-                 <span id="sodaSpringsRain"></span>
-            </p>
-            <p>
-                <img src="https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2019/05/extra_large_1bbfc650b28c7b5bb2008726ec4b2a91-700x467.jpg" alt="Fish Haven" id="fishHavenImage">
-            </p>
-       </article>
-    </section>
 
     </main>
     <footer>
@@ -104,10 +109,8 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/towndata.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src= "scripts/webfontload.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/fivedayforecast.js"></script>
 </body>
 
 </html>
