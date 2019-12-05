@@ -14,7 +14,7 @@
     <script type="text/javascript" src="scripts/menu.js"></script>
 </head>
 
-<body>
+<body onload="getFiveDayForecast('5607916')">
     <header>Sunny Side Up Weather
         <img class="logo" src="images/sunny.png">
         <!-- <section id="weatherSummary"> -->
@@ -61,6 +61,10 @@
                             <span id="currentTemp"></span>
                         </p>
                         <p>
+                            <span>Hightemp</span>
+                            <span id="tempHigh"></span>
+                        </p>
+                        <p>
                             <span>Wind Speed:</span>
                             <span id="windSpeed"></span>
                         </p>
@@ -91,11 +95,11 @@
                         </tr>
                         <tr>
                             <td>Forecast</td>
-                            <td id="temp1">60&deg;</td>
-                            <td id="temp2">68&deg;</td>
-                            <td id="temp3">56&deg;</td>
-                            <td id="temp4">52&deg;</td>
-                            <td id="temp5">44&deg;</td>
+                            <td id="temp1"></td>
+                            <td id="temp2"></td>
+                            <td id="temp3"></td>
+                            <td id="temp4"></td>
+                            <td id="temp5"></td>
                         </tr>
                     </table>
            
@@ -110,7 +114,7 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/fivedayforecast.js"></script>
 </body>
 

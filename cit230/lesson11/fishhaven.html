@@ -14,7 +14,7 @@
     <script type="text/javascript" src="scripts/menu.js"></script>
 </head>
 
-<body>
+<body onload="getFiveDayForecast('5585010')">
     <header>Sunny Side Up Weather
         <img class="logo" src="images/sunny.png">
         <!-- <section id="weatherSummary"> -->
@@ -46,19 +46,18 @@
             <h2>Fish Haven, Idaho</h2>
             <section id="forecast">
                 <h3>This Week's Forecast</h3>
+                
                 <div class="herodiv">
-                    <picture>
-                        <!-- <source srcset="images/franklinmedium.jpg" media="(min-width:500px)
-                        and (max-width: 799px)">
-                            <source srcset="images/franklinlarge.jpg" media="(min-width:800px)">
-                        <img src="images/franklinsmall.jpg" alt="trees"> -->
-                    </picture>
                     <img src="images/prestonmain.jpg" alt="Preston" class="hero-image">
                     <section class="stats">
                         <h2>Weather</h2>
                         <p>
                             <span>Current Temp:</span>
                             <span id="currentTemp"></span>
+                        </p>
+                        <p>
+                            <span>High Temp:</span>
+                            <span id="tempHigh"></span>
                         </p>
                         <p>
                             <span>Wind Speed:</span>
@@ -68,7 +67,7 @@
                             <span>Wind Chill:</span>
                             <span id="windChill"></span>
                         </p>
-
+                        
                     </section>
                 </div>
 
@@ -91,13 +90,20 @@
                         </tr>
                         <tr>
                             <td>Forecast</td>
-                            <td id="temp1">60&deg;</td>
-                            <td id="temp2">68&deg;</td>
-                            <td id="temp3">56&deg;</td>
-                            <td id="temp4">52&deg;</td>
-                            <td id="temp5">44&deg;</td>
+                            <td id="temp1"></td>
+                            <td id="temp2"></td>
+                            <td id="temp3"></td>
+                            <td id="temp4"></td>
+                            <td id="temp5"></td>
                         </tr>
                     </table>
+                </section>
+                <section>
+                    <div>
+                    <p>Upcoming Events:</p>
+                    <div id="eventsFishHaven"></div>
+                </section>
+                
            
 
     </main>
@@ -110,8 +116,8 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/main.js"></script>
     <script src="scripts/fivedayforecast.js"></script>
+    <script src="scripts/towndata.js"></script>
 </body>
 
 </html>

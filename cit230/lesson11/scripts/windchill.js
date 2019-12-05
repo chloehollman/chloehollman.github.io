@@ -12,7 +12,7 @@ fetch(apiWeatherURL)
             let currentTemp = currentWeather.main.temp;
             let tempHigh = currentWeather.main.temp_max;
             let windSpeed = currentWeather.wind.speed;
-            let windChill;
+            let windChill = 0;
 
             if (currentTemp <= 50 && windSpeed > 3) {
                 windChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(windSpeed, 0.16) + .4275 * currentTemp * Math.pow(windSpeed, .16);
