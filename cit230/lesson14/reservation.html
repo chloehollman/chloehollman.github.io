@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Gelasio&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <img class="header" src="images/header.jpg" alt="Header">
+        
+    
+        <nav>
+                <ul class="navigation">
+                        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="temples.html">Temple</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main id= "reservation">
+                <h2>Reserve a Hotel!</h2>
+                <form action ="thanks.html" method="GET">
+                    <div>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div>
+                        <label for="date">Date for Reservation:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" pattern="[A-Za-z ]{5,}"required>
+                    </div>
+                    <div>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="user@email.com">
+                    </div>
+                    <div>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                    <label for="roomTypes">Type of Room:</label>
+        
+                    <select name="roomTypes" id="roomTypes">
+                    <option value= "" selected disabled>Select Room</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Connecting Rooms">Connecting Rooms</option>
+                    <option value="Mini Suite">Mini Suite</option>
+                    <option value="Master Suite">Master Suite</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="home">Where are you from?</label>
+                    <input type="text" id="home" name="home" pattern="[A-Za-z ]{5,}"required>
+                </div>
+                <div>
+                    <label for="comments" class="align-top">Special comments?</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+        
+                </form>
+               
+            </main>
+</header>
+<footer>
+        <p>&#9813; Chloe Hollman &#9813; <a href="http://www.byui.edu/online">BYUI Online Learning</a> &#9813;</p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

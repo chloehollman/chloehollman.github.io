@@ -1,0 +1,238 @@
+/* html selectors */
+body{
+    margin: 0 auto;
+}
+
+#color {
+    background-color: #9BA4D4;
+}
+
+#templecolor {
+    background-color: #97c4bd;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2{
+    color:black;
+    font-family: 'Gelasio', serif;
+    font-size:30px;
+    text-align:center;
+}
+#contact {
+    color: white;
+    font-family: 'Gelasio', serif;
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+}
+
+
+#note {
+    background-color: #9BA4D4;
+    padding: 5px;
+    text-align: center;
+}
+
+
+a {
+    color: white;
+    font-family: 'Gelasio', serif;
+}
+
+p {
+    color:white;
+    font-family: 'Abel', sans-serif;
+}
+nav a:hover {
+    text-decoration: none;
+    font-weight:bold;
+}
+nav a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-family: 'Gelasio', serif;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    padding: 20px;
+    margin:10px;
+    width: 50% 0px;
+}
+
+
+li {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+    padding:10px;
+     /* padding-left: 0;  */
+}
+
+li a {
+    text-decoration: none;
+}
+/* class selectors */
+
+ul {
+    background-color: #08323B;
+    display: flex;
+    margin: -10px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 0px;
+    /* padding: 100px; */
+}
+
+
+img {
+    width:300px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #08323B;
+    text-align: center;
+    padding: 0.5em;
+    padding: 0.25rem;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+
+/* ---color schemes ---
+gold: #D4CB9B 
+periwinkle: #9BA4D4
+greenish blue: #448594
+dark green-blue: #08323B
+white: #FFFFFF */
+
+
+/* ----------Hamburger Menu ------------*/
+nav {
+    margin: 0 auto;
+	max-width: 100%;
+	background-color: #000;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+#wireframe img {
+    width: 100%;
+}
+
+#reservation {
+    color: white;
+    background-color: #97c4bd;
+    width: 60%;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    min-width: 150px;
+    font-family: 'Abel', sans-serif;
+}
+
+iframe {
+    width:200px;
+    height: 200px;
+}
+
+#service {
+    background-color:antiquewhite;
+    text-align:center;
+}
+
+#service img {
+   width: 300px;
+}
+
+li {
+    text-align: left;
+    list-style-type: disc;
+    font-family: 'Abel', sans-serif;
+}
+
+h3 {
+    font-family: 'Gelasio', serif;
+    color: black;
+
+}
+#reception {
+    background-color:  #97c4bd;
+}
+
+#servicecolor {
+    background-color: antiquewhite;
+}
+#link {
+   color:black;
+}
+
+#link:hover {
+    background-color: azure;
+}
+
+
+
+
+
+

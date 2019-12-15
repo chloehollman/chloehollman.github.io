@@ -1,0 +1,85 @@
+[
+    {
+    "TempleId" : 1,
+    "Name" : "Los Angeles California Temple",
+    "Location" : "Los Angeles, CA",
+    "YearBuilt" : 1956,
+    "Image" : "images/losangelestemple.jpeg",
+    "Services":[
+        "Clothing rental available",
+        "Cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+    ],
+    "Address" : {
+        "StreetLine1" :"10777 Santa Monica Blvd",
+        "StreetLine2" : null,
+        "City" :"Los Angeles",
+        "State": "CA",
+        "Zip": 90025
+    }
+},
+{
+    "TempleId" : 2,
+    "Name" : "San Diego California Temple",
+    "Location" : "San Diego, California",
+    "YearBuilt" : 1993,
+    "Image" : "images/sandiegotemple.jpeg",
+    "Services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+    ],
+    "Address" : {
+        "StreetLine1" :"7474 Charmant DR",
+        "StreetLine2" :null,
+        "City" :"San Diego",
+        "State" :"CA",
+        "Zip" : 92122
+
+    }
+
+},
+{
+    "TempleId" : 3,
+    "Name" : "Newport Beach California Temple",
+    "Location" : "Newport Beach, California",
+    "YearBuilt" : 2005,
+    "Image" : "images/newporttemple.jpg",
+    "Services" : [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "No distrubution center nearby"
+    ],
+    "Address" : {
+        "StreetLine1" :"2300 Bonita Canyon Dr",
+        "StreetLine2": null,
+        "City": "Newport Beach",
+        "State" : "CA",
+        "Zip" : 92660
+    }
+},
+{
+    "TempleId": 4,
+    "Name" : "Tijuana Mexico Temple",
+    "Location" : "Tijuana, Mexico",
+    "YearBuilt" : 2015,
+    "Image" : "images/tijuantemple.jpg",
+    "Services" : [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+    ],
+    "Address": {
+        "StreetLine1": "Paseo Del Rio 6832",
+        "StreetLine2" : "Esquina Campestre Oriente",
+        "City" : "Tijuana",
+        "State" : "Baja California",
+        "Country" : "Mexico",
+        "Zip" : 22226
+    }
+
+}]
